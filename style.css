@@ -1,4 +1,4 @@
-@font-face{font-family:'Poppins';src:url('Poppins-Light.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap}
+ï»¿@font-face{font-family:'Poppins';src:url('Poppins-Light.ttf') format('truetype');font-weight:300;font-style:normal;font-display:swap}
 @font-face{font-family:'Poppins';src:url('Poppins-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:'Poppins';src:url('Poppins-Medium.ttf') format('truetype');font-weight:500;font-style:normal;font-display:swap}
 @font-face{font-family:'Poppins';src:url('Poppins-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
@@ -311,10 +311,10 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
 .footer-menu-copyright a:hover{color:var(--gold-light)}
 .copyright-text{font-size:12px;color:var(--gray)}
 
-/* ÔöÇÔöÇÔöÇ w-layout-grid ÔöÇÔöÇÔöÇ */
+/* Ã”Ã¶Ã‡Ã”Ã¶Ã‡Ã”Ã¶Ã‡ w-layout-grid Ã”Ã¶Ã‡Ã”Ã¶Ã‡Ã”Ã¶Ã‡ */
 .w-layout-grid{display:grid;grid-auto-columns:1fr}
 
-/* ÔöÇÔöÇÔöÇ grid-testimonials (asymmetric) ÔöÇÔöÇÔöÇ */
+/* Ã”Ã¶Ã‡Ã”Ã¶Ã‡Ã”Ã¶Ã‡ grid-testimonials (asymmetric) Ã”Ã¶Ã‡Ã”Ã¶Ã‡Ã”Ã¶Ã‡ */
 #eventos{display:flex;flex-direction:column}
 #eventos>.wrapper.fade-container-custom{flex:1;display:flex;flex-direction:column}
 #eventos .grid-testimonials{
