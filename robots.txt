@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alliancecanoasnorte.com.br/sitemap.xml

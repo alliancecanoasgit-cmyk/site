@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alliance Canoas Norte — Jiu-Jitsu e Judô em Canoas</title>
+  <meta name="description" content="Alliance Canoas Norte — mais de 19 anos de história em jiu-jitsu e judô. Moacir Mendes, campeão mundial e treinador da seleção olímpica. Aulas para todas as idades. Experimente 3 aulas grátis.">
+  <meta name="keywords" content="Alliance Canoas, jiu-jitsu Canoas, judô Canoas, Moacir Mendes, academia de jiu-jitsu, aula de judô, artes marciais Canoas">
+  <meta property="og:title" content="Alliance Canoas Norte — Jiu-Jitsu e Judô em Canoas">
+  <meta property="og:description" content="Mais de 19 anos formando campeões. Jiu-Jitsu, Judô e muito mais para todas as idades. 3 aulas experimentais grátis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alliancecanoasnorte.com.br">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://alliancecanoasnorte.com.br">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --bg:#ffffff;--bg-2:#f8f8f8;--bg-3:#f0f0f0;--border:rgba(0,0,0,0.08);
+      --gold:#e30613;--gold-light:#febc11;--gold-dark:#b30410;--gold-bg:rgba(227,6,19,0.08);
+      --text:#0d0d0d;--gray:#666;--gray-light:#888;
+      --font:'Poppins','Segoe UI',sans-serif;
+      --font-heading:'Impact','Arial Black',sans-serif;
+    }
+    html{scroll-behavior:smooth;overflow-x:hidden}
+    body{
+      font-family:var(--font);background:var(--bg);color:var(--text);
+      overflow-x:hidden;line-height:1.7;-webkit-font-smoothing:antialiased;
+    }
+    ::selection{background:var(--gold);color:#fff}
+    img{max-width:100%;display:block}
+    section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:center}
+    .hero-banner{justify-content:flex-start}
+
+    .container{max-width:1200px;margin:0 auto;padding:0 28px}
+    .container-header{max-width:1200px;margin:0 auto;padding:0 28px}
+    .wrapper{max-width:1200px;margin:0 auto;padding:0 28px}
+    .hero-banner>.wrapper{margin:0;width:100%}
+
+    .pb-200-73{padding-bottom:60px}
+    .pt-150-104{padding-top:60px}
+    @media(max-width:991px){.pb-200-73{padding-bottom:50px}.pt-150-104{padding-top:50px}}
+    @media(max-width:767px){.pb-200-73{padding-bottom:73px}.pt-150-104{padding-top:104px}}
+
+    .section-tag{
+      display:flex;align-items:center;gap:10px;
+      font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;
+      color:var(--gold);margin-bottom:8px;
+    }
+    .section-tag::before{content:'';display:block;width:20px;height:1px;background:var(--gold)}
+
+    .masked-text-wrapper{margin-bottom:0}
+    .h3{
+      font-size:clamp(1.8rem,3vw,2.2rem);font-weight:700;line-height:1.15;
+      letter-spacing:0.02em;margin-bottom:8px;font-family:var(--font-heading);
+    }
+    .h3 .gold{color:var(--gold)}
+    .section-desc{
+      font-size:14px;color:var(--gray-light);line-height:1.6;max-width:520px;
+    }
+
+    .btn-main{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:16px 32px;background:var(--gold);color:#fff;
+      font-size:14px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;
+      text-decoration:none;border:none;cursor:pointer;position:relative;
+      transition:all 0.3s;border-radius:4px;
+    }
+    .btn-main:hover{background:var(--gold-light);color:#fff;transform:translateY(-2px)}
+
+    .btn-main svg{width:18px;height:18px;fill:currentColor}
+    .btn-second{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:15px 30px;background:transparent;color:var(--text);
+      font-size:14px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;
+      text-decoration:none;border:1px solid var(--border);cursor:pointer;
+      transition:all 0.3s;border-radius:4px;
+    }
+    .btn-second:hover{border-color:var(--gold-light);color:var(--gold-light)}
+
+
+    .btn-shadow-wrapper{position:relative;display:inline-flex}
+    .btn-shadow-first,.btn-shadow-second,.btn-shadow-third{
+      position:absolute;inset:0;border-radius:4px;pointer-events:none;
+      transition:all 0.3s;
+    }
+    .btn-shadow-first{background:rgba(227,6,19,0.3);transform:translateY(4px);filter:blur(4px)}
+    .btn-shadow-second{background:rgba(227,6,19,0.15);transform:translateY(6px);filter:blur(8px)}
+    .btn-shadow-third{background:rgba(227,6,19,0.08);transform:translateY(8px);filter:blur(12px)}
+
+    .header{
+      position:fixed;top:0;left:0;width:100%;z-index:1000;
+      padding:20px 0;transition:all 0.4s;
+    }
+    .header.scrolled{background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);padding:12px 0}
+    .main-info{display:flex;justify-content:space-between;align-items:center}
+    .link-logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--text)}
+    .logo-text{
+      font-size:1.4rem;font-weight:800;letter-spacing:3px;text-transform:uppercase;
+      line-height:1;font-family:var(--font-heading);
+    }
+    .logo-text span{color:var(--gold)}
+    .logo-sub{display:block;font-size:9px;letter-spacing:3px;font-weight:400;color:var(--gray);margin-top:1px}
+    .nav-menu{display:flex;align-items:center;gap:24px}
+    .nav-menu a{
+      color:var(--text);text-decoration:none;font-size:13px;font-weight:500;
+      transition:color 0.3s;
+    }
+    .nav-menu a:hover{color:var(--gold-light)}
+
+    .btn-header-desktop{display:flex;align-items:center;gap:16px}
+    .btn-header-desktop a{padding:10px 22px;font-size:12px;color:#fff}
+    .btn-header-desktop a:hover{color:#fff}
+    .w-nav-button{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;z-index:1001}
+    .w-nav-button span{display:block;width:26px;height:1.5px;background:var(--text);transition:all 0.3s}
+    .w-nav-button.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+    .w-nav-button.active span:nth-child(2){opacity:0}
+    .w-nav-button.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+    .hero-banner{min-height:100vh;display:flex;flex-direction:column;position:relative;padding-top:80px;overflow-x:hidden}
+    .title-outer-wrapper{position:relative;z-index:1;padding:30px 0 20px}
+    .title-container{position:relative}
+    .masked-title{
+      font-size:clamp(2.4rem,6vw,4rem);font-weight:800;line-height:0.95;
+      letter-spacing:0.04em;text-transform:uppercase;color:var(--text);
+      font-family:var(--font-heading);
+    }
+    .masked-title .line-1{display:block;color:var(--text)}
+    .masked-title .line-2{display:block;color:var(--gold)}
+    .hero-description{
+      max-width:520px;margin-bottom:20px;position:relative;z-index:1;
+    }
+    .hero-description p{font-size:16px;color:var(--gray-light);line-height:1.7;margin-bottom:16px}
+    .hero-banner__container-btn{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-stats-grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+      max-width:380px;margin-top:24px;
+    }
+    .hero-stat{padding:12px 16px;background:rgba(0,0,0,0.02);border:1px solid var(--border);border-radius:6px;text-align:center}
+    .hero-stat-num{font-size:1.6rem;font-weight:800;color:var(--gold);line-height:1}
+    .hero-stat-label{font-size:10px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+
+    .companies{
+      padding:30px 0;border-top:1px solid var(--border);margin-top:30px;
+    }
+    .companies-wrapper{display:flex;flex-direction:column;gap:20px}
+    .description-companies{text-align:center}
+    .companies-trust{font-size:12px;color:var(--gray);letter-spacing:2px;text-transform:uppercase}
+    .companies-wrap{overflow:hidden}
+    .companies-strip{display:flex;gap:48px;animation:scroll-strip 200s linear infinite;width:max-content}
+    .companies-strip:hover{animation-play-state:paused}
+    @keyframes scroll-strip{
+      0%{transform:translateX(0)}
+      100%{transform:translateX(-50%)}
+    }
+    .company-card{white-space:nowrap;padding:8px 0}
+    .company-card-text{font-size:14px;color:var(--gray);font-weight:500;letter-spacing:0.5px}
+
+    .pb-200-73.pt-150-104{position:relative}
+    .fade-container{position:relative}
+    .fade-container-custom{position:relative}
+    .section-bg-alt{background:var(--bg-2)}
+
+    .grid-2col{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .grid-3col{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-4col{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+
+    .image-frame{
+      aspect-ratio:4/3;border-radius:6px;overflow:hidden;
+      background:linear-gradient(135deg,#f5f5f5,#eee);
+      border:1px solid var(--border);display:flex;align-items:center;
+      justify-content:center;flex-direction:column;
+    }
+    .image-frame svg{width:48px;height:48px;opacity:0.2;fill:var(--gray);margin-bottom:8px}
+    .image-frame p{font-size:12px;color:var(--gray);letter-spacing:1px}
+
+    .coach-image{
+      aspect-ratio:3/4;border-radius:6px;overflow:hidden;
+      background:linear-gradient(160deg,#f5f5f5,#eee);
+      border:1px solid var(--border);display:flex;align-items:center;
+      justify-content:center;flex-direction:column;
+    }
+    .coach-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:12px}
+    .coach-list li{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--gray-light)}
+    .coach-list li svg{width:16px;height:16px;fill:var(--gold-light);flex-shrink:0}
+    .achievements-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+    .achievement{
+      padding:10px 8px;background:rgba(0,0,0,0.02);border:1px solid var(--border);
+      border-radius:6px;text-align:center;
+    }
+    .achievement-num{font-size:1.3rem;font-weight:700;color:var(--gold);line-height:1}
+    .achievement-label{font-size:10px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+
+    .milestones{display:flex;flex-direction:column;gap:6px;margin-top:16px}
+    .milestone{
+      display:flex;align-items:flex-start;gap:12px;
+      padding:8px 12px;border-left:2px solid rgba(254,188,17,0.15);
+    }
+    .milestone:hover{border-color:var(--gold-light)}
+    .milestone-year{font-size:1rem;font-weight:700;color:var(--gold);min-width:56px;line-height:1.4}
+    .milestone-text{font-size:14px;color:var(--gray-light);line-height:1.5}
+
+    .schedule-tabs{display:flex;gap:2px;flex-wrap:wrap;margin-bottom:16px;padding:4px;background:rgba(0,0,0,0.02);border:1px solid var(--border);border-radius:6px;max-width:fit-content}
+    .schedule-tab{
+      padding:10px 20px;background:none;border:none;color:var(--gray);
+      font-size:13px;font-weight:500;letter-spacing:0.3px;cursor:pointer;
+      border-radius:4px;transition:all 0.3s;white-space:nowrap;
+    }
+    .schedule-tab:hover{color:var(--text)}
+    .schedule-tab.active{background:var(--gold);color:#1a1a1a}
+    .schedule-table-wrap{display:none}
+    .schedule-table-wrap.active{display:block}
+    .schedule-table{width:100%;border-collapse:collapse;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+    .schedule-table th{
+      padding:14px 18px;text-align:left;font-size:13px;font-weight:600;letter-spacing:0.3px;
+      background:var(--gold-bg);color:var(--gold);border-bottom:1px solid var(--border);
+    }
+    .schedule-table td{padding:12px 18px;font-size:14px;color:var(--gray-light);border-bottom:1px solid rgba(0,0,0,0.04)}
+    .schedule-table tr:last-child td{border-bottom:none}
+    .schedule-table .time{font-weight:600;color:var(--text)}
+    .badge-fem{
+      display:inline-block;padding:1px 6px;background:var(--gold-bg);
+      color:var(--gold-light);font-size:9px;letter-spacing:1px;border-radius:2px;margin-left:4px;
+    }
+    .schedule-note{
+      margin-top:12px;padding:10px 14px;background:var(--gold-bg);
+      border-left:2px solid var(--gold-light);font-size:13px;color:var(--gray-light);
+    }
+
+    .pricing-card{
+      padding:20px 16px;background:rgba(0,0,0,0.02);
+      border:1px solid var(--border);border-radius:8px;text-align:center;
+      transition:all 0.3s;position:relative;overflow:hidden;
+    }
+    .pricing-card:hover{transform:translateY(-4px);border-color:rgba(254,188,17,0.3)}
+    .pricing-card.featured{border-color:var(--gold);background:var(--gold-bg)}
+    .pricing-label{
+      position:absolute;top:10px;right:-28px;background:var(--gold);color:#fff;
+      font-size:8px;font-weight:700;letter-spacing:1px;padding:2px 28px;transform:rotate(45deg);
+    }
+    .pricing-name{font-size:1.1rem;font-weight:700;letter-spacing:-0.01em;margin-bottom:4px}
+    .pricing-price{font-size:2rem;font-weight:800;color:var(--gold);line-height:1}
+    .pricing-price span{font-size:0.9rem;color:var(--gray);font-weight:400}
+    .pricing-desc{font-size:13px;color:var(--gray);margin-top:6px;line-height:1.5}
+
+    .audience-card{
+      padding:20px 16px;background:rgba(0,0,0,0.02);
+      border:1px solid var(--border);border-radius:8px;text-align:center;transition:all 0.3s;
+    }
+    .audience-card:hover{border-color:rgba(254,188,17,0.2);transform:translateY(-4px)}
+    .audience-icon{margin-bottom:12px}
+    .audience-icon svg{width:28px;height:28px;fill:var(--gold);opacity:0.5}
+    .audience-card h4{font-size:1.1rem;font-weight:700;letter-spacing:-0.01em;margin-bottom:6px}
+    .audience-card p{font-size:14px;color:var(--gray-light);line-height:1.6}
+
+    .events-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .event-card{
+      aspect-ratio:4/3;border-radius:6px;overflow:hidden;
+      background:linear-gradient(135deg,#f5f5f5,#eee);
+      border:1px solid var(--border);display:flex;align-items:center;
+      justify-content:center;flex-direction:column;transition:all 0.3s;
+    }
+    .event-card:hover{transform:scale(1.02);border-color:rgba(254,188,17,0.2)}
+    .event-card svg{width:36px;height:36px;fill:var(--gray);opacity:0.25;margin-bottom:6px}
+    .event-card p{font-size:12px;color:var(--gray);letter-spacing:1px}
+
+
+    .btn-whatsapp{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:16px 36px;background:#25D366;color:#fff;font-size:14px;
+      font-weight:700;text-transform:uppercase;letter-spacing:0.5px;
+      text-decoration:none;border-radius:4px;transition:all 0.3s;
+    }
+    .btn-whatsapp:hover{background:#20bd5a;transform:translateY(-2px)}
+
+    .btn-whatsapp svg{width:20px;height:20px;fill:currentColor}
+
+    .footer{border-top:1px solid var(--border)}
+    .footer-head{
+      text-align:center;padding:40px 28px;position:relative;
+      border-bottom:1px solid var(--border);
+    }
+    .footer-head .h1-footer{
+      font-size:clamp(1.8rem,3vw,2.2rem);font-weight:800;line-height:1.05;
+      letter-spacing:0.02em;margin-bottom:16px;font-family:var(--font-heading);
+    }
+    .footer-head .h1-footer .gold{color:var(--gold)}
+    .btn-wrapper-footer{display:inline-flex;position:relative}
+    .btn-container-link{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:16px 36px;background:var(--gold);color:#fff;
+      font-size:14px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;
+      text-decoration:none;border-radius:4px;transition:all 0.3s;position:relative;
+    }
+    .btn-container-link:hover{background:var(--gold-light);transform:translateY(-2px)}
+
+    .btn-container-link svg{width:18px;height:18px;fill:currentColor}
+    .btn-footer-absolute-container{display:flex;justify-content:center}
+    .footer-body{padding:40px 28px 24px}
+    .footer-links-container{display:flex;flex-direction:column;gap:24px}
+    .footer-menu-container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+    .footer-logo-block{display:flex;flex-direction:column;gap:6px}
+    .footer-logo-text{font-size:1.2rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    .footer-logo-text span{color:var(--gold)}
+    .footer-address{font-size:12px;color:var(--gray);line-height:1.6}
+    .footer-menu{display:flex;flex-direction:column;gap:8px}
+    .footer-menu-head{font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;margin-bottom:4px}
+    .footer-item-menu{font-size:13px;color:var(--gray-light);text-decoration:none;transition:color 0.3s}
+    .footer-item-menu:hover{color:var(--gold-light)}
+    .socials-container{display:flex;gap:16px;margin-top:8px}
+    .socials-container a{font-size:13px;color:var(--gray-light);text-decoration:none;transition:color 0.3s}
+    .socials-container a:hover{color:var(--gold-light)}
+
+    .footer-copyright{
+      display:flex;justify-content:space-between;align-items:center;
+      padding-top:32px;border-top:1px solid var(--border);flex-wrap:wrap;gap:16px;
+    }
+    .footer-copyright-item{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .footer-menu-copyright{display:flex;gap:16px}
+    .footer-menu-copyright a{font-size:12px;color:var(--gray);text-decoration:none}
+    .footer-menu-copyright a:hover{color:var(--gold-light)}
+    .copyright-text{font-size:12px;color:var(--gray)}
+
+    /* ─── w-layout-grid ─── */
+    .w-layout-grid{display:grid;grid-auto-columns:1fr}
+
+    /* ─── grid-testimonials (asymmetric) ─── */
+    .grid-testimonials{
+      display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:16px;
+    }
+    .grid-left-side{display:flex;flex-direction:column;gap:16px}
+    .grid-center-side{display:flex;flex-direction:column;gap:16px}
+    .grid-right-side{display:flex;flex-direction:column;gap:16px}
+    .scroll-inner{display:flex;flex-direction:column;gap:16px}
+
+    .grid__large-container{
+      padding:24px;border-radius:6px;background:rgba(0,0,0,0.02);
+      border:1px solid var(--border);transition:all 0.3s;
+    }
+    .grid__large-container:hover{border-color:rgba(254,188,17,0.2);background:rgba(254,188,17,0.04)}
+    .grid__medium-container{
+      padding:16px;border-radius:6px;background:rgba(0,0,0,0.02);
+      border:1px solid var(--border);transition:all 0.3s;
+    }
+    .grid__medium-container:hover{border-color:rgba(254,188,17,0.2)}
+    .grid__small-container{
+      padding:16px;border-radius:6px;background:rgba(0,0,0,0.02);
+      border:1px solid var(--border);text-align:center;transition:all 0.3s;
+    }
+    .grid__small-container:hover{border-color:rgba(254,188,17,0.2)}
+    .grid__medium-no-bg-container{padding:24px 0;text-align:center}
+    .grid-right-style{text-align:right}
+    .grid__large-container.video-large-container{
+      background:linear-gradient(160deg,#f5f5f5,#eee);
+      display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;
+      min-height:200px;
+    }
+    .grid__large-container.video-large-container svg{width:32px;height:32px;fill:var(--gray);opacity:0.3}
+    .grid__large-container.video-large-container p{font-size:12px;color:var(--gray);letter-spacing:1px}
+    .company-logo{font-size:12px;color:var(--gray);text-transform:uppercase;letter-spacing:2px}
+    .name-ceo{font-size:13px;color:var(--text);font-weight:500}
+    .testimonial-text{font-size:15px;color:var(--gray-light);line-height:1.7;margin:8px 0}
+
+    .no-desktop{display:block}
+
+    @media(max-width:991px){
+      .grid-3col{grid-template-columns:1fr}
+      .grid-4col{grid-template-columns:repeat(2,1fr)}
+      .grid-2col{grid-template-columns:1fr;gap:48px}
+      .grid-testimonials{grid-template-columns:1fr;gap:16px}
+      .grid-testimonials>div{grid-area:span 2/span 2/span 2/span 2!important}
+      .footer-menu-container{grid-template-columns:1fr 1fr;gap:32px}
+      .hero-stats-grid{max-width:100%}
+      .coach-image{aspect-ratio:4/3;max-width:400px;margin:0 auto}
+      .events-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:767px){
+      .nav-menu{display:none;position:fixed;top:0;left:0;width:100%;height:100dvh;background:rgba(255,255,255,0.98);flex-direction:column;justify-content:center;align-items:center;gap:28px;z-index:999}
+      .nav-menu.open{display:flex}
+      .nav-menu a{font-size:16px}
+      .w-nav-button{display:flex;z-index:1000}
+      .hero-banner{padding-top:80px;min-height:auto}
+      .title-outer-wrapper{padding:30px 0 20px}
+      .hero-description p{font-size:16px}
+      .hero-stats-grid{margin-top:28px}
+      .companies{padding:32px 0;margin-top:32px}
+      .grid-4col{grid-template-columns:1fr;max-width:320px;margin:0 auto}
+      .events-grid{grid-template-columns:1fr}
+      .footer-menu-container{grid-template-columns:1fr}
+      .footer-copyright{flex-direction:column;text-align:center}
+      .hero-banner__container-btn{flex-direction:column;align-items:flex-start}
+      .schedule-tabs{overflow-x:auto;flex-wrap:nowrap;max-width:100%}
+      .schedule-table-wrap{overflow-x:auto}
+      .btn-header-desktop{display:none}
+      .achievements-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:478px){
+      .hero-banner{padding-top:60px}
+      .title-outer-wrapper{padding:20px 0}
+      .hero-stats-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+      .companies-strip{gap:24px}
+    }
+    @media(min-width:1300px){
+      .pb-200-73{padding-bottom:200px}
+      .pt-150-104{padding-top:150px}
+      .section-tag{margin-bottom:16px}
+      .h3{font-size:clamp(1.8rem,3vw,2.8rem);margin-bottom:16px}
+      .section-desc{font-size:16px;line-height:1.8;max-width:560px}
+      .hero-banner{padding-top:120px}
+      .title-outer-wrapper{padding:60px 0 40px}
+      .masked-title{font-size:clamp(3rem,8vw,6rem)}
+      .hero-description{margin-bottom:40px}
+      .hero-description p{font-size:17px;line-height:1.8;margin-bottom:32px}
+      .hero-stats-grid{gap:16px;max-width:420px;margin-top:48px}
+      .hero-stat{padding:20px}
+      .hero-stat-num{font-size:2.2rem}
+      .hero-stat-label{font-size:11px;margin-top:6px}
+      .companies{padding:60px 0;margin-top:60px}
+      .grid-2col{gap:80px}
+      .grid-3col{gap:24px}
+      .grid-4col{gap:20px}
+      .coach-list{gap:12px;margin-top:20px}
+      .coach-list li{gap:10px;font-size:15px}
+      .achievements-grid{gap:12px;margin-top:28px}
+      .achievement{padding:16px 12px}
+      .achievement-num{font-size:1.6rem}
+      .milestones{gap:8px;margin-top:28px}
+      .milestone{gap:14px;padding:10px 14px}
+      .schedule-tabs{margin-bottom:32px}
+      .schedule-note{margin-top:20px;padding:14px 18px;font-size:14px}
+      .pricing-card{padding:28px 20px}
+      .audience-card{padding:32px 24px}
+      .events-grid{gap:16px}
+      .footer-head{padding:80px 28px}
+      .footer-head .h1-footer{font-size:clamp(2rem,4vw,3rem);margin-bottom:32px}
+      .footer-body{padding:60px 28px 40px}
+      .footer-links-container{gap:48px}
+      .grid__large-container{padding:28px}
+      .grid__medium-container{padding:24px}
+    }
+    html.lenis{scroll-behavior:auto}
+    .lenis.lenis-smooth{scroll-behavior:auto}
+    .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}
+    }
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Alliance Canoas Norte",
+    "description": "Academia de Jiu-Jitsu e Judô com mais de 19 anos de história em Canoas. Aulas para todas as idades.",
+    "url": "https://alliancecanoasnorte.com.br",
+    "telephone": "+555191826651",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. A.J. Renner, 861",
+      "addressLocality": "Canoas",
+      "addressRegion": "RS",
+      "postalCode": "92030-010",
+      "addressCountry": "BR"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Moacir Mendes"
+    },
+    "areaServed": "Canoas",
+    "openingHours": "Mo-Fr 07:00-21:00",
+    "priceRange": "R$250-R$420"
+  }
+  </script>
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="header" id="header">
+    <div class="container-header">
+      <div class="main-info">
+        <a href="#" class="link-logo">
+          <img src="alliance logo.svg" alt="Alliance" class="logo-svg">
+          <div>
+            <div class="logo-text">ALLIANCE<span>.</span></div>
+            <div class="logo-sub">Canoas Norte</div>
+          </div>
+        </a>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#historia">História</a>
+          <a href="#moacir">Moacir</a>
+          <a href="#horarios">Horários</a>
+          <a href="#planos">Planos</a>
+          <a href="#eventos">Eventos</a>
+          <div class="btn-header-desktop">
+            <a href="#planos" class="btn-main" style="padding:10px 22px;font-size:12px;">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              3 Aulas
+            </a>
+          </div>
+        </nav>
+        <button class="w-nav-button" id="mobileToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero-banner" id="hero">
+    <div class="wrapper" style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+      <div class="title-outer-wrapper">
+        <div class="title-container">
+          <img src="alliance logo.svg" alt="Alliance" class="hero-logo-svg">
+          <h1 class="masked-title" id="heroTitle">
+            <span class="line-1">Alliance</span>
+            <span class="line-2">Canoas Norte</span>
+          </h1>
+        </div>
+      </div>
+      <div class="hero-description">
+        <p>Mais de 19 anos formando campeões dentro e fora dos tatames. Jiu-Jitsu, Judô e muito mais para todas as idades.</p>
+        <div class="hero-banner__container-btn">
+          <div class="btn-shadow-wrapper">
+            <a href="https://wa.me/555191826651" target="_blank" class="btn-main">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              3 Aulas Experimentais
+            </a>
+            <div class="btn-shadow-first"></div>
+            <div class="btn-shadow-second"></div>
+            <div class="btn-shadow-third"></div>
+          </div>
+          <a href="#historia" class="btn-second">Nossa História</a>
+        </div>
+      </div>
+      <div class="hero-stats-grid">
+        <div class="hero-stat"><div class="hero-stat-num">19+</div><div class="hero-stat-label">Anos de História</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">70+</div><div class="hero-stat-label">Faixas-Pretas</div></div>
+        <div class="hero-stat"><div class="hero-stat-num">6x</div><div class="hero-stat-label">Campeã Mundial</div></div>
+      </div>
+      <div class="companies">
+        <div class="companies-wrapper">
+          <div class="description-companies">
+            <div class="companies-trust">Nossos diferenciais</div>
+          </div>
+          <div class="companies-wrap">
+            <div class="companies-strip" id="companiesStrip">
+              <div class="company-card"><span class="company-card-text">19 Anos de História</span></div>
+              <div class="company-card"><span class="company-card-text">70+ Faixas-Pretas</span></div>
+              <div class="company-card"><span class="company-card-text">6x Campeã Mundial</span></div>
+              <div class="company-card"><span class="company-card-text">40+ Anos de Judô</span></div>
+              <div class="company-card"><span class="company-card-text">2 Tatames</span></div>
+              <div class="company-card"><span class="company-card-text">Turma Feminina</span></div>
+              <div class="company-card"><span class="company-card-text">A partir de 3 anos</span></div>
+              <div class="company-card"><span class="company-card-text">Seleção Olímpica</span></div>
+              <!-- Duplicado para loop -->
+              <div class="company-card"><span class="company-card-text">19 Anos de História</span></div>
+              <div class="company-card"><span class="company-card-text">70+ Faixas-Pretas</span></div>
+              <div class="company-card"><span class="company-card-text">6x Campeã Mundial</span></div>
+              <div class="company-card"><span class="company-card-text">40+ Anos de Judô</span></div>
+              <div class="company-card"><span class="company-card-text">2 Tatames</span></div>
+              <div class="company-card"><span class="company-card-text">Turma Feminina</span></div>
+              <div class="company-card"><span class="company-card-text">A partir de 3 anos</span></div>
+              <div class="company-card"><span class="company-card-text">Seleção Olímpica</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HISTÓRIA ═══ -->
+  <section class="pb-200-73 pt-150-104 section-bg-alt" id="historia">
+    <div class="wrapper pb-200-73 pt-150-104 fade-container" style="padding-bottom:40px;padding-top:0;">
+      <div class="section-tag">Nossa História</div>
+      <div class="masked-text-wrapper">
+        <h2 class="h3">Uma trajetória de <span class="gold">excelência</span></h2>
+      </div>
+    </div>
+    <div class="wrapper fade-container-custom">
+      <div class="grid-2col">
+        <div>
+          <p style="font-size:15px;color:var(--gray-light);line-height:1.9;margin-bottom:12px;"><strong>Moacir Mendes</strong> pratica judô há mais de 40 anos, é campeão mundial e treinador da seleção brasileira olímpica. Começou a dar aulas de judô em 1998 nas escolas La Salle, e em pouco tempo já reunia cerca de <strong>150 alunos</strong>.</p>
+          <p style="font-size:15px;color:var(--gray-light);line-height:1.9;margin-bottom:12px;">Até 2004 lecionou apenas judô para crianças; a partir de 2004, a pedido de amigos, passou a dar aulas de jiu-jitsu também na La Salle, e a turma foi crescendo.</p>
+          <p style="font-size:15px;color:var(--gray-light);line-height:1.9;margin-bottom:12px;">Em <strong>2006</strong> abriu a academia própria no bairro Niterói, em Canoas. Há 3 anos mudou para <strong>Estância Velha</strong>, com estrutura maior e mais moderna — <strong>2 tatames</strong>.</p>
+          <div class="milestones">
+            <div class="milestone"><div class="milestone-year">1998</div><div class="milestone-text">Primeiras aulas de judô nas escolas La Salle — 150 alunos</div></div>
+            <div class="milestone"><div class="milestone-year">2004</div><div class="milestone-text">Início das aulas de jiu-jitsu</div></div>
+            <div class="milestone"><div class="milestone-year">2006</div><div class="milestone-text">Fundação da Alliance Canoas — bairro Niterói</div></div>
+            <div class="milestone"><div class="milestone-year">2023</div><div class="milestone-text">Mudança para Estância Velha — 2 tatames</div></div>
+          </div>
+        </div>
+        <div class="image-frame">
+          <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+          <p>Fotos em breve</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MOACIR ═══ -->
+  <section class="pb-200-73 pt-150-104" id="moacir">
+    <div class="wrapper pb-200-73 pt-150-104 fade-container" style="padding-bottom:40px;padding-top:0;">
+      <div class="section-tag">Professor</div>
+      <div class="masked-text-wrapper">
+        <h2 class="h3">Moacir <span class="gold">Mendes</span></h2>
+      </div>
+    </div>
+    <div class="wrapper fade-container-custom">
+      <div class="grid-2col" style="direction:rtl">
+        <div style="direction:ltr">
+          <p style="font-size:15px;color:var(--gray-light);line-height:1.9;">Faixa-preta, campeão mundial de judô e treinador da seleção brasileira olímpica. Mais de 4 décadas dedicadas às artes marciais, formando atletas e cidadãos.</p>
+          <ul class="coach-list">
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 40 anos de judô, campeão mundial</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Treinador da seleção brasileira olímpica</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Mais de 70 faixas-pretas formados</li>
+          </ul>
+          <div class="achievements-grid">
+            <div class="achievement"><div class="achievement-num">40+</div><div class="achievement-label">Anos de Judô</div></div>
+            <div class="achievement"><div class="achievement-num" style="font-size:1.4rem">🏆</div><div class="achievement-label">Campeão Mundial</div></div>
+            <div class="achievement"><div class="achievement-num" style="font-size:1.4rem">🇧🇷</div><div class="achievement-label">Seleção Olímpica</div></div>
+          </div>
+        </div>
+        <div style="direction:ltr">
+          <div class="coach-image">
+            <svg viewBox="0 0 24 24" fill="var(--gray)" opacity="0.25" style="width:48px;height:48px"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            <p style="font-size:12px;color:var(--gray);letter-spacing:1px;margin-top:6px">Foto do Professor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HORÁRIOS ═══ -->
+  <section class="pb-200-73 pt-150-104 section-bg-alt" id="horarios">
+    <div class="wrapper pb-200-73 pt-150-104 fade-container" style="padding-bottom:40px;padding-top:0;">
+      <div class="section-tag">Grade de Horários</div>
+      <div class="masked-text-wrapper">
+        <h2 class="h3">Encontre o <span class="gold">melhor horário</span></h2>
+        <p class="section-desc">Turmas para todas as idades e níveis — de crianças a adultos, do iniciante ao avançado.</p>
+      </div>
+    </div>
+    <div class="wrapper fade-container-custom">
+      <div class="schedule-tabs" id="scheduleTabs" data-lenis-prevent>
+        <button class="schedule-tab active" data-tab="jiu-iniciante">Jiu-Jitsu Iniciante</button>
+        <button class="schedule-tab" data-tab="jiu-avancado">Jiu-Jitsu Avançado</button>
+        <button class="schedule-tab" data-tab="jiu-kids">Jiu-Jitsu Kids</button>
+        <button class="schedule-tab" data-tab="judo-kids">Judô Kids</button>
+        <button class="schedule-tab" data-tab="nogi">No-Gi</button>
+      </div>
+
+      <div class="schedule-table-wrap active" id="tab-jiu-iniciante">
+        <table class="schedule-table">
+          <thead><tr><th>Dia</th><th>Horários</th></tr></thead>
+          <tbody>
+            <tr><td>Segunda</td><td><span class="time">07h • 10h • 12h • 19h • 20h</span></td></tr>
+            <tr><td>Terça</td><td><span class="time">09h • 12h • 18h</span> • <span class="time">19h</span> <span class="badge-fem">FEMININO</span></td></tr>
+            <tr><td>Quarta</td><td><span class="time">07h • 10h • 12h • 19h • 20h</span></td></tr>
+            <tr><td>Quinta</td><td><span class="time">09h • 12h • 18h</span> • <span class="time">19h</span> <span class="badge-fem">FEMININO</span></td></tr>
+            <tr><td>Sexta</td><td><span class="time">07h • 10h • 12h • 19h • 20h</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="schedule-table-wrap" id="tab-jiu-avancado">
+        <table class="schedule-table">
+          <thead><tr><th>Dia</th><th>Horários</th></tr></thead>
+          <tbody>
+            <tr><td>Segunda</td><td><span class="time">12h • 20h</span></td></tr>
+            <tr><td>Terça</td><td><span class="time">12h</span></td></tr>
+            <tr><td>Quarta</td><td><span class="time">12h • 20h</span></td></tr>
+            <tr><td>Quinta</td><td><span class="time">12h</span></td></tr>
+            <tr><td>Sexta</td><td><span class="time">12h</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="schedule-table-wrap" id="tab-jiu-kids">
+        <table class="schedule-table">
+          <thead><tr><th>Dia</th><th>Horário</th></tr></thead>
+          <tbody>
+            <tr><td>Segunda</td><td><span class="time">19h</span></td></tr>
+            <tr><td>Terça</td><td><span class="time">19h</span></td></tr>
+            <tr><td>Quarta</td><td><span class="time">19h</span></td></tr>
+            <tr><td>Quinta</td><td><span class="time">19h</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="schedule-table-wrap" id="tab-judo-kids">
+        <table class="schedule-table">
+          <thead><tr><th>Dia</th><th>Horários</th></tr></thead>
+          <tbody>
+            <tr><td>Terça</td><td><span class="time">09h • 18h</span></td></tr>
+            <tr><td>Quinta</td><td><span class="time">09h • 18h</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="schedule-table-wrap" id="tab-nogi">
+        <table class="schedule-table">
+          <thead><tr><th>Dia</th><th>Horários</th></tr></thead>
+          <tbody>
+            <tr><td>Terças</td><td><span class="time">07h • 20h</span></td></tr>
+            <tr><td>Quintas</td><td><span class="time">07h • 20h</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="schedule-note">
+        Aulas de jiu-jitsu e judô somam 4 aulas por semana. Turma feminina tem 2 aulas semanais dedicadas.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INVESTIMENTO ═══ -->
+  <section class="pb-200-73 pt-150-104" id="planos">
+    <div class="wrapper pb-200-73 pt-150-104 fade-container" style="padding-bottom:40px;padding-top:0;text-align:center">
+      <div class="section-tag" style="justify-content:center">Investimento</div>
+      <div class="masked-text-wrapper">
+        <h2 class="h3">Planos <span class="gold">acessíveis</span></h2>
+        <p class="section-desc" style="margin:0 auto">Preços para todos os bolsos. A marca não quer parecer "cara" ou inacessível.</p>
+      </div>
+    </div>
+    <div class="wrapper fade-container-custom">
+      <div class="grid-4col">
+        <div class="pricing-card">
+          <div class="pricing-name">Padrão</div>
+          <div class="pricing-price">R$ 340 <span>/mês</span></div>
+          <div class="pricing-desc">Jiu-Jitsu ou Judô — aulas regulares</div>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-label">MAIS POPULAR</div>
+          <div class="pricing-name">Feminino</div>
+          <div class="pricing-price">R$ 250 <span>/mês</span></div>
+          <div class="pricing-desc">Turma dedicada para mulheres — 2 aulas/semana</div>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-name">Avançado</div>
+          <div class="pricing-price">R$ 420 <span>/mês</span></div>
+          <div class="pricing-desc">Treinos avançados com maior frequência</div>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-name">Kids</div>
+          <div class="pricing-price">R$ 370 <span>/mês</span></div>
+          <div class="pricing-desc">A partir de 3 anos — Jiu-Jitsu ou Judô</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PÚBLICO ═══ -->
+  <section class="pb-200-73 pt-150-104 section-bg-alt" id="publico">
+    <div class="wrapper pb-200-73 pt-150-104 fade-container" style="padding-bottom:40px;padding-top:0;text-align:center">
+      <div class="section-tag" style="justify-content:center">Público</div>
+      <div class="masked-text-wrapper">
+        <h2 class="h3">Para <span class="gold">todos</span></h2>
+        <p class="section-desc" style="margin:0 auto">Da criança ao adulto, do iniciante ao competidor.</p>
+      </div>
+    </div>
+    <div class="wrapper fade-container-custom">
+      <div class="grid-3col">
+        <div class="audience-card">
+          <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/></svg></div>
+          <h4>Crianças</h4>
+          <p>A partir de 3 anos. Judô Kids e Jiu-Jitsu Kids em horários exclusivos.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+          <h4>Adultos</h4>
+          <p>Jovens e adultos de todas as idades. Turmas iniciante e avançado.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M12 12c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm0-10c4.2 0 8 3.22 8 8.2 0 3.32-2.67 7.25-8 11.8-5.33-4.55-8-8.48-8-11.8C4 5.22 7.8 2 12 2z"/></svg></div>
+          <h4>Mulheres</h4>
+          <p>Turma exclusivamente feminina com 2 aulas semanais dedicadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EVENTOS (grid assimétrico tipo testimonials) ═══ -->
+  <section class="pb-200-73 pt-150-104" id="eventos">
+    <div class="wrapper pb-200-73 pt-150-104 fade-container" style="padding-bottom:40px;padding-top:0;text-align:center">
+      <div class="section-tag" style="justify-content:center">Eventos</div>
+      <div class="masked-text-wrapper">
+        <h2 class="h3">Galeria de <span class="gold">fotos</span></h2>
+        <p class="section-desc" style="margin:0 auto">Registros dos nossos eventos, competições e momentos especiais.</p>
+      </div>
+    </div>
+    <div class="wrapper fade-container-custom">
+      <div class="w-layout-grid grid-testimonials">
+        <!-- LEFT -->
+        <div class="grid-left-side">
+          <div class="grid__large-container">
+            <div class="company-logo">Evento</div>
+            <p class="testimonial-text">Fotos dos nossos campeonatos e confraternizações.</p>
+            <div class="name-ceo">— Alliance Canoas</div>
+          </div>
+          <div class="grid__small-container">
+            <svg viewBox="0 0 24 24" fill="var(--gray)" opacity="0.3" style="width:32px;height:32px;margin:0 auto"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+            <p style="font-size:11px;color:var(--gray);margin-top:6px">Em breve</p>
+          </div>
+          <div class="grid__large-container">
+            <div class="company-logo">Competições</div>
+            <p class="testimonial-text">Nossos atletas representando a Alliance em todo o Brasil.</p>
+            <div class="name-ceo">— Resultados</div>
+          </div>
+        </div>
+
+        <!-- CENTER -->
+        <div class="grid-center-side">
+          <div class="scroll-inner">
+            <div class="grid__large-container video-large-container">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <p>Video em breve</p>
+            </div>
+            <div class="grid__large-container">
+              <div class="company-logo">Eventos 2026</div>
+              <p class="testimonial-text">Momentos marcantes da nossa academia.</p>
+              <div class="name-ceo">— Galeria</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="grid-right-side">
+          <div class="grid__medium-container" style="text-align:right">
+            <div class="company-logo">Treinos</div>
+            <p class="testimonial-text" style="text-align:right">Fotos dos nossos tatames e aulas.</p>
+            <div class="name-ceo">— Dias de treino</div>
+          </div>
+          <div class="grid__small-container">
+            <svg viewBox="0 0 24 24" fill="var(--gray)" opacity="0.3" style="width:32px;height:32px;margin:0 auto"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+            <p style="font-size:11px;color:var(--gray);margin-top:6px">Em breve</p>
+          </div>
+          <div class="grid__large-container grid-right-style">
+            <div class="company-logo">Confrades</div>
+            <p class="testimonial-text" style="text-align:right">Festas e confraternizações da equipe.</p>
+            <div class="name-ceo">— Equipe Alliance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-head">
+      <div class="h1-footer">3 Aulas <span class="gold">Experimentais</span></div>
+      <div class="btn-footer-absolute-container">
+        <div class="btn-shadow-wrapper">
+          <a href="https://wa.me/555191826651" target="_blank" class="btn-container-link">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Fale Conosco no WhatsApp
+          </a>
+          <div class="btn-shadow-first" style="background:rgba(227,6,19,0.3)"></div>
+          <div class="btn-shadow-second" style="background:rgba(227,6,19,0.15)"></div>
+          <div class="btn-shadow-third" style="background:rgba(227,6,19,0.08)"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-body">
+      <div class="footer-links-container">
+        <div class="footer-menu-container">
+          <div class="footer-logo-block">
+            <div style="display:flex;align-items:center;gap:10px">
+              <img src="alliance logo.svg" alt="Alliance" class="footer-logo-svg">
+              <div class="footer-logo-text">ALLIANCE<span>.</span></div>
+            </div>
+            <p class="footer-address">Av. A.J. Renner, 861 — Estância Velha, Canoas — RS<br>92030-010</p>
+            <div class="socials-container">
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu-head">Seções</div>
+            <a href="#historia" class="footer-item-menu">História</a>
+            <a href="#moacir" class="footer-item-menu">Moacir</a>
+            <a href="#horarios" class="footer-item-menu">Horários</a>
+            <a href="#planos" class="footer-item-menu">Planos</a>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu-head">Contato</div>
+            <a href="https://wa.me/555191826651" target="_blank" class="footer-item-menu">WhatsApp</a>
+            <a href="#" class="footer-item-menu">Instagram</a>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-menu-head">Endereço</div>
+            <div class="footer-item-menu" style="font-size:13px;color:var(--gray-light);line-height:1.6">Av. A.J. Renner, 861<br>Estância Velha, Canoas/RS</div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-item">
+            <div class="footer-menu-copyright">
+              <a href="#">Privacidade</a>
+              <a href="#">Termos</a>
+            </div>
+            <div class="copyright-text">&copy; 2026 Alliance Canoas Norte</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ─── Header scroll ───
+    const header = document.getElementById('header');
+    let lastScroll = 0;
+    const onScroll = (y) => {
+      if (y > 80 && y > lastScroll) header.classList.add('scrolled');
+      else if (y <= 80) header.classList.remove('scrolled');
+      lastScroll = y;
+    };
+    window.addEventListener('scroll', () => onScroll(window.scrollY));
+
+    // ─── Mobile toggle ───
+    const mt = document.getElementById('mobileToggle');
+    const nav = document.getElementById('navMenu');
+    mt.addEventListener('click', () => { mt.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mt.classList.remove('active'); nav.classList.remove('open'); }));
+
+    // ─── Schedule Tabs ───
+    document.querySelectorAll('.schedule-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.schedule-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.schedule-table-wrap').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const p = document.getElementById('tab-' + tab.dataset.tab);
+        if (p) p.classList.add('active');
+      });
+    });
+
+    // ─── Lenis smooth scroll ───
+    const lenisScript = document.createElement('script');
+    lenisScript.src = 'https://unpkg.com/lenis@1.1.18/dist/lenis.min.js';
+    lenisScript.onload = () => {
+      try {
+        const lenis = new Lenis({duration:1.2,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});
+        lenis.on('scroll', () => onScroll(lenis.scroll));
+        function raf(t){lenis.raf(t);requestAnimationFrame(raf)}
+        requestAnimationFrame(raf);
+      } catch(e){console.warn('Lenis init failed',e)}
+    };
+    document.body.appendChild(lenisScript);
+  </script>
+</body>
+</html>
