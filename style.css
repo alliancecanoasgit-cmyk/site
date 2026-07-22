@@ -384,8 +384,9 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
   .footer-menu-container{grid-template-columns:1fr}
   .footer-copyright{flex-direction:column;text-align:center}
   .hero-banner__container-btn{flex-direction:column;align-items:flex-start}
-  .schedule-tabs{overflow-x:auto;flex-wrap:nowrap;max-width:100%}
-  .schedule-table-wrap{overflow-x:auto}
+  .schedule-tabs{overflow-x:auto;flex-wrap:nowrap;max-width:100%;-webkit-overflow-scrolling:touch}
+  .schedule-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .schedule-table-wrap .schedule-table{min-width:max-content}
   .btn-header-desktop{display:none}
   .achievements-grid{grid-template-columns:1fr}
 }
