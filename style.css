@@ -4,14 +4,14 @@
 @font-face{font-family:'Poppins';src:url('Poppins-SemiBold.ttf') format('truetype');font-weight:600;font-style:normal;font-display:swap}
 @font-face{font-family:'Poppins';src:url('Poppins-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:'Poppins';src:url('Poppins-ExtraBold.ttf') format('truetype');font-weight:800;font-style:normal;font-display:swap}
-@font-face{font-family:'Impact';src:url('Impact.ttf') format('truetype');font-weight:normal;font-style:normal;font-display:swap}
+@font-face{font-family:'Oswald';src:url('Oswald-VariableFont_wght.ttf') format('truetype');font-weight:200 700;font-style:normal;font-display:swap}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
   --bg:#ffffff;--bg-2:#f8f8f8;--bg-3:#f0f0f0;--border:rgba(0,0,0,0.08);
   --gold:#e30613;--gold-light:#febc11;--gold-dark:#b30410;--gold-bg:rgba(227,6,19,0.08);
   --text:#0d0d0d;--gray:#666;--gray-light:#888;
   --font:'Poppins','Segoe UI',sans-serif;
-  --font-heading:'Impact','Arial Black',sans-serif;
+  --font-heading:'Oswald',sans-serif;
 }
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{
@@ -43,7 +43,7 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
 .masked-text-wrapper{margin-bottom:0}
 .h3{
   font-size:clamp(1.8rem,3vw,2.2rem);font-weight:700;line-height:1.15;
-  letter-spacing:0.02em;margin-bottom:8px;font-family:var(--font-heading);
+  letter-spacing:0.02em;margin-bottom:8px;font-family:var(--font-heading);text-transform:uppercase;
 }
 .h3 .gold{color:var(--gold)}
 .section-desc{
@@ -271,7 +271,7 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
 }
 .footer-head .h1-footer{
   font-size:clamp(1.8rem,3vw,2.2rem);font-weight:800;line-height:1.05;
-  letter-spacing:0.02em;margin-bottom:16px;font-family:var(--font-heading);
+  letter-spacing:0.02em;margin-bottom:16px;font-family:var(--font-heading);text-transform:uppercase;
 }
 .footer-head .h1-footer .gold{color:var(--gold)}
 .btn-wrapper-footer{display:inline-flex;position:relative}
