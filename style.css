@@ -119,6 +119,10 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
   max-width:520px;margin-bottom:20px;position:relative;z-index:1;
 }
 .hero-description p{font-size:16px;color:var(--gray-light);line-height:1.7;margin-bottom:16px}
+.hero-row{display:flex;align-items:center;gap:40px}
+.hero-text-col{flex:1;display:flex;flex-direction:column;justify-content:center}
+.hero-image-wrapper{flex:0 0 42%;display:flex;align-items:center}
+.hero-image{width:100%;max-height:65vh;object-fit:cover;border-radius:8px}
 .hero-banner__container-btn{display:flex;gap:12px;flex-wrap:wrap}
 .hero-stats-grid{
   display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
@@ -327,21 +331,21 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
 .scroll-inner{display:flex;flex-direction:column;gap:16px;flex:1}
 
 .grid__large-container{
-  padding:24px;border-radius:6px;background:rgba(0,0,0,0.02);
+  padding:0;border-radius:6px;background:rgba(0,0,0,0.02);
   border:1px solid var(--border);transition:all 0.3s;flex:1;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;
 }
 .grid__large-container:hover{border-color:rgba(254,188,17,0.2);background:rgba(254,188,17,0.04)}
 .grid__medium-container{
-  padding:16px;border-radius:6px;background:rgba(0,0,0,0.02);
+  padding:0;border-radius:6px;background:rgba(0,0,0,0.02);
   border:1px solid var(--border);transition:all 0.3s;flex:1;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;
 }
 .grid__medium-container:hover{border-color:rgba(254,188,17,0.2)}
 .grid__small-container{
-  padding:16px;border-radius:6px;background:rgba(0,0,0,0.02);
+  padding:0;border-radius:6px;background:rgba(0,0,0,0.02);
   border:1px solid var(--border);text-align:center;transition:all 0.3s;flex:2;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;
 }
 .grid__small-container:hover{border-color:rgba(254,188,17,0.2)}
 .grid__medium-no-bg-container{padding:24px 0;text-align:center}
@@ -349,12 +353,14 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
 .grid__large-container.video-large-container{
   background:linear-gradient(160deg,#f5f5f5,#eee);
   display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;flex:2;
+  padding:0;overflow:hidden;
 }
 .grid__large-container.video-large-container svg{width:32px;height:32px;fill:var(--gray);opacity:0.3}
 .grid__large-container.video-large-container p{font-size:12px;color:var(--gray);letter-spacing:1px}
 .company-logo{font-size:12px;color:var(--gray);text-transform:uppercase;letter-spacing:2px}
 .name-ceo{font-size:13px;color:var(--text);font-weight:500}
 .testimonial-text{font-size:15px;color:var(--gray-light);line-height:1.7;margin:8px 0}
+.gallery-img{width:100%;height:100%;object-fit:cover;border-radius:6px}
 
 .no-desktop{display:block}
 
@@ -375,6 +381,9 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
   .nav-menu a{font-size:16px}
   .w-nav-button{display:flex;z-index:1000}
   .hero-banner{padding-top:80px;min-height:auto}
+  .hero-row{flex-direction:column}
+  .hero-image-wrapper{flex:none;width:100%;max-height:none}
+  .hero-image{max-height:40vh;width:100%;border-radius:8px}
   .title-outer-wrapper{padding:30px 0 20px}
   .hero-description p{font-size:16px}
   .hero-stats-grid{margin-top:28px}
@@ -431,8 +440,8 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
   .footer-head .h1-footer{font-size:clamp(2rem,4vw,3rem);margin-bottom:32px}
   .footer-body{padding:60px 28px 40px}
   .footer-links-container{gap:48px}
-  .grid__large-container{padding:28px}
-  .grid__medium-container{padding:24px}
+  .grid__large-container{padding:0}
+  .grid__medium-container{padding:0}
 }
 html.lenis{scroll-behavior:auto}
 .lenis.lenis-smooth{scroll-behavior:auto}
