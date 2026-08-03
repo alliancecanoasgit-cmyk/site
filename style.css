@@ -212,8 +212,8 @@ section[id]{min-height:100vh;display:flex;flex-direction:column;justify-content:
 .schedule-table tr:last-child td{border-bottom:none}
 .schedule-table .time{font-weight:600;color:var(--text)}
 .badge-fem{
-  display:inline-block;padding:1px 6px;background:var(--gold-bg);
-  color:var(--gold-light);font-size:9px;letter-spacing:1px;border-radius:2px;margin-left:4px;
+  display:inline-block;padding:2px 8px;background:var(--gold);
+  color:#fff;font-size:9px;font-weight:700;letter-spacing:1px;border-radius:2px;margin-left:4px;
 }
 .schedule-note{
   margin-top:12px;padding:10px 14px;background:var(--gold-bg);
